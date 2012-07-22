@@ -35,6 +35,7 @@
         </Grid>
 
         <Controls:RadDatePicker Value="{Binding DateTime, Mode=TwoWay}" />
+        <!--  <Controls:RadDatePicker Value="{Binding NullableDateTime, Mode=TwoWay}" />  -->
 
     </Grid>
 </common:LayoutAwarePage>

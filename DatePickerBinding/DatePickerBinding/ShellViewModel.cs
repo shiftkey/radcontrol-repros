@@ -5,10 +5,19 @@ namespace DatePickerBinding
 {
     public class ShellViewModel : BindableBase
     {
-        public DateTime DateTime { get; set; }
+        private DateTime _dateTime;
+        private DateTime? _nullableDateTime;
 
-        public DateTime? NullableDateTime { get; set; }
-        
+        public DateTime DateTime
+        {
+            get { return _dateTime; }
+            set { SetProperty(ref _dateTime, value); }
+        }
 
+        public DateTime? NullableDateTime
+        {
+            get { return _nullableDateTime; }
+            set { SetProperty(ref _nullableDateTime, value); }
+        }
     }
 }
